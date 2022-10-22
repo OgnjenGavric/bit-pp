@@ -95,10 +95,25 @@ console.log(num1 + " is not a number or / 2 ⛔️");
 var xNum = 10;
 var yNum = 20;
 
-if(xNum === yNum){
+if(xNum === yNum) {
   console.log("Numbers are the same");
-}else if (xNum > yNum){
+} else if (xNum > yNum){
   console.log("Number xNum are is larger then yNum");
-}else{
+} else {
   console.log("Number xNum are is smaller then yNum");
+}
+
+// Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+// Formula : F = (9*C/5) + 32 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+
+var cTemp = 33;
+var cToFahr = (9*cTemp/5) + 32;
+console.log(cToFahr);
+
+// JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double difference between that number and 13.
+var nNumber = 14;
+if (nNumber <= 13) {
+  console.log("Number are the same");
+} else if((nNumber - 13) * 2) {
+  console.log("Double difference between that nNumber and 13");
 }
