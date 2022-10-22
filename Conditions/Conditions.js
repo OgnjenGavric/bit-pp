@@ -90,3 +90,15 @@ console.log(num1 + " is a number and " + num1 + " / 2 ✅");
 } else {
 console.log(num1 + " is not a number or / 2 ⛔️");
 }
+
+// Write a program that compares two numbers and displays the larger. Display the result in the console.
+var xNum = 10;
+var yNum = 20;
+
+if(xNum === yNum){
+  console.log("Numbers are the same");
+}else if (xNum > yNum){
+  console.log("Number xNum are is larger then yNum");
+}else{
+  console.log("Number xNum are is smaller then yNum");
+}
