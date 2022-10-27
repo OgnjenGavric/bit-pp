@@ -3,28 +3,28 @@
 var dayInWeek = "1";
 switch (dayInWeek) {
   case "1":
-      console.log("It is Monday!");
-      break;
+    console.log("It is Monday!");
+    break;
   case "2":
-      console.log("It is Tuesday!");
-      break;
+    console.log("It is Tuesday!");
+    break;
   case "3":
-      console.log("It is Wednesday!");
-      break;
+    console.log("It is Wednesday!");
+    break;
   case "4":
-      console.log("It is Thursday!");
-      break;
+    console.log("It is Thursday!");
+    break;
   case "5":
-      console.log("It is Friday!");
-      break;
+    console.log("It is Friday!");
+    break;
   case "6":
-      console.log("It is Saturday!");
-      break;
+    console.log("It is Saturday!");
+    break;
   case "7":
-      console.log("It is Sunday!");
-      break;
+    console.log("It is Sunday!");
+    break;
   default:
-      console.log("Invalid week day! ⛔️");
+    console.log("Invalid week day! ⛔️");
 }
 
 // Write a program that shows text representation of a day in a week for a number input from 1 to 7. All other cases output a message explaining that input must be a number between 1 and 7.
@@ -33,26 +33,26 @@ switch (dayInWeek) {
 var dayInWeek2 = "12";
 switch (dayInWeek2) {
   case "1":
-      console.log("Monday!");
-      break;
+    console.log("Monday!");
+    break;
   case "2":
-      console.log("Tuesday!");
-      break;
+    console.log("Tuesday!");
+    break;
   case "3":
-      console.log("Wednesday!");
-      break;
+    console.log("Wednesday!");
+    break;
   case "4":
-      console.log("Thursday!");
-      break;
+    console.log("Thursday!");
+    break;
   case "5":
-      console.log("Friday!");
-      break;
+    console.log("Friday!");
+    break;
   case "6":
-      console.log("Saturday!");
-      break;
+    console.log("Saturday!");
+    break;
   case "7":
-      console.log("Sunday!");
-      break;
+    console.log("Sunday!");
+    break;
   default:
     console.log("Input must be a number between 1 and 7 ⛔️");
 }
@@ -68,12 +68,12 @@ switch (dayInWeek3) {
   case "3":
   case "4":
   case "5":
-      console.log("It's weekday.");
-      break;
+    console.log("It's weekday.");
+    break;
   case "6":
   case "7":
-      console.log("It's weekend.");
-      break;
+    console.log("It's weekend.");
+    break;
   default:
     console.log("Input must be a number between 1 and 7 ⛔️");
 }
@@ -85,32 +85,32 @@ switch (dayInWeek3) {
 var monthInYear = "13";
 switch (monthInYear) {
   case "1":
-      console.log("Jan!");
-      break;
+    console.log("Jan!");
+    break;
   case "2":
-      console.log("Feb!");
-      break;
+    console.log("Feb!");
+    break;
   case "3":
-      console.log("Mar!");
-      break;
+    console.log("Mar!");
+    break;
   case "4":
-      console.log("Apr!");
-      break;
+    console.log("Apr!");
+    break;
   case "5":
-      console.log("May!");
-      break;
+    console.log("May!");
+    break;
   case "6":
-      console.log("Jun!");
-      break;
+    console.log("Jun!");
+    break;
   case "7":
-      console.log("Jul!");
-      break;
+    console.log("Jul!");
+    break;
   case "8":
-      console.log("Aug!");
-      break;
+    console.log("Aug!");
+    break;
   case "9":
-      console.log("Sep!");
-      break;
+    console.log("Sep!");
+    break;
   case "10":
     console.log("Oct!");
     break;
@@ -129,18 +129,18 @@ var seasonInYear = "12";
 switch (seasonInYear) {
   case "1":
   case "2":
-      console.log("It's winter!");
-      break;
+    console.log("It's winter!");
+    break;
   case "3":
   case "4":
   case "5":
-      console.log("It's spring!");
-      break;
+    console.log("It's spring!");
+    break;
   case "6":
   case "7":
   case "8":
-      console.log("It's summer!");
-      break;
+    console.log("It's summer!");
+    break;
   case "9":
   case "10":
   case "11":
@@ -157,8 +157,8 @@ switch (seasonInYear) {
 var grade = "A";
 switch (grade) {
   case "A":
-      console.log("Good job ✅");
-      break;
+    console.log("Good job ✅");
+    break;
   case "B":
     console.log("Pretty good ✅");
     break;
@@ -166,8 +166,8 @@ switch (grade) {
     console.log("Passed ✅");
     break;
   case "D":
-      console.log("Not so good.");
-      break;
+    console.log("Not so good.");
+    break;
   case "F":
     console.log("Falied. ⛔️");
     break;
@@ -181,18 +181,18 @@ switch (cityNameAndCountries) {
   case "Beograd":
   case "Novi Sad":
   case "Nis":
-      console.log("It's Serbia!");
-      break;
+    console.log("It's Serbia!");
+    break;
   case "Banjaluka":
   case "Sarajevo":
   case "Mostar":
-      console.log("It's Bosnia!");
-      break;
+    console.log("It's Bosnia!");
+    break;
   case "Tivat":
   case "Podgorica":
   case "Budva":
-      console.log("It's Montenegro!");
-      break;
+    console.log("It's Montenegro!");
+    break;
   case "Zagreb":
   case "Split":
   case "Dubrovnik":
@@ -217,12 +217,12 @@ switch (operation) {
     console.log(num1 + num2);
     break;
   case "-":
-    console.log(num1 - num2, num2-num1);
+    console.log(num1 - num2, num2 - num1);
     break;
   case "*":
-    console.log(num1*num2);
+    console.log(num1 * num2);
     break;
   case "/":
-    console.log(num1/num2, num2/num1);
+    console.log(num1 / num2, num2 / num1);
     break;
 }
