@@ -69,7 +69,7 @@ console.log(sumPositiveNum);
 // Output: The array is symmetric.
 // Input array: [3, 4, 12, 8]
 // Output: The array isn’t symmetric.
-var arrayF = [];
+var arrayF = [2, 4, -2, 7, -2, 4, 2];
 var arrayG = [];
 
 // 7. Write a program that intertwines two arrays. You can assume the arrays are of the same length.
