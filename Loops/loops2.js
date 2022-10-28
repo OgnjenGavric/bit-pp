@@ -69,20 +69,39 @@ console.log(sumPositiveNum);
 // Output: The array is symmetric.
 // Input array: [3, 4, 12, 8]
 // Output: The array isn’t symmetric.
+var arrayF = [];
+var arrayG = [];
 
 // 7. Write a program that intertwines two arrays. You can assume the arrays are of the same length.
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 3, 5, 8, 6, 11, 2, 9]
+var arrayH = [];
 
 // 8. Write a program that concatenates two arrays.
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 5, 6, 2, 3, 8, 11, 9]
+var arrayI = [4, 5, 6, 2];
+var arrayJ = [3, 8, 11, 9];
+var concatenateArray = arrayI.concat(arrayJ);
+
+console.log(concatenateArray);
 
 // 9. Write a program that deletes a given element e from the array a.
 // Input: e = 2, a = [4, 6, 2, 8, 2, 2]
 // Output array: [4, 6, 8]
+var arrayK = [4, 6, 2, 8, 2, 2];
+var arrayWithoutE = [];
+
+for (let i = 0; i < arrayK.length; i++) {
+  if (arrayK[i] !== 2) {
+    arrayWithoutE.push(arrayK[i]);
+  }
+}
+
+console.log(arrayWithoutE);
 
 // 10. Write a program that inserts a given element e on the given position p in the array a. If the value of the position is greater than the array length, print the error message.
 // Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
 // Output: [2, -2, 33, 78, 12, 5, 8]
+
 
