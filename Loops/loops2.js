@@ -4,33 +4,41 @@
 // Output: yes
 // Input: e = 3, a = [5, -4.2, 18, 7]
 // Output: no
-var e = 3;
+var e = 5;
 var arrayA = [5, -4.2, 18, 7];
+var result = "No";
 for (var i = 0; i < arrayA.length; i++) {
   if (arrayA[i] === e) {
-    console.log("Yes");
-  } else {
-    console.log("No");
+    result = "Yes";
+    break;
   }
 }
+
+console.log(result);
 
 // 2. Write a program that multiplies every positive element of a given array by 2.
 // Input array: [-3, 11, 5, 3.4, -8]
 // Output array: [-3, 22, 10, 6.8, -8]
+
 var arrayB = [-3, 11, 5, 3.4, -8];
+var resultArray = [];
 for (var i = 0; i < arrayB.length; i++) {
   if (arrayB[i] > 0) {
-    arrayB[i] = arrayB[i] * 2;
+    resultArray[i] = arrayB[i] * 2;
+  } else {
+    resultArray[i] = arrayB[i];
   }
 }
-console.log(arrayB);
+console.log(resultArray);
 
 // 3. Write a program that finds the minimum of a given array and prints out its value and index.
 // Input array: [4, 2, 2, -1, 6]
 // Output: -1, 3
+
 var arrayC = [4, 2, 2, -1, 6];
 var smallestNum = arrayC[0];
-for (var i = 1; i < arrayC.length; i++) {
+
+for (var i = 0; i < arrayC.length; i++) {
   if (arrayC[i] < smallestNum) {
     smallestNum = arrayC[i];
   }
@@ -42,20 +50,28 @@ console.log(smallestNum, arrayC.indexOf(smallestNum));
 // Input array: [4, 2, 2, -1, 6]
 // Output: 2
 var arrayD = [4, 2, 2, -1, 6];
-var firstMinNum = arrayD[0];
-var secondMinNum;
-for (var i = 1; i < arrayD.length; i++) {
-  if (arrayD[i] < firstMinNum) {
-    firstMinNum = arrayD[i];
+
+var firstmin = arrayD[0];
+var secmin = arrayD[0];
+
+for (let i = 0; i < arrayD.length; i++) {
+  if (arrayD[i] < firstmin) {
+    secmin = firstmin;
+    firstmin = arrayD[i];
+  } else if (arrayD[i] < secmin) {
+    secmin = arrayD[i];
   }
 }
 
-console.log(firstMinNum);
+console.log("First min = " + firstmin);
+console.log("Second min = " + secmin);
+
+
 
 // 5. Write a program that calculates the sum of positive elements in the array.
 // Input array: [3, 11, -5, -3, 2]
 // Output: 16
-var arrayE = [-3, 11, 5, 3.4, -8];
+var arrayE = [3, 11, -5, -3, 2];
 var sumPositiveNum = 0;
 for (var i = 0; i < arrayE.length; i++) {
   if (arrayE[i] > 0) {
@@ -105,3 +121,19 @@ console.log(arrayWithoutE);
 // Output: [2, -2, 33, 78, 12, 5, 8]
 
 
+var element = 78;
+var position = 3;
+var arrayLength = [2, -2, 33, 12, 5, 8];
+var resultArrayPosition = [];
+
+for (var i = 0; i < arrayLength.length; i++) {
+  if (position > arrayLength.length) {
+    console.log('Error');
+    break;
+  } else if (i === position) {
+    resultArrayPosition[resultArrayPosition.length] = element;
+  } else {
+    resultArrayPosition[resultArrayPosition.length] = arrayLength[i];
+  }
+}
+console.log(resultArrayPosition);
