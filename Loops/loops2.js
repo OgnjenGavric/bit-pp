@@ -80,13 +80,37 @@ for (var i = 0; i < arrayE.length; i++) {
 }
 console.log(sumPositiveNum);
 
+console.log("------********------");
 // 6. Write a program that checks if a given array is symmetric. An array is symmetric if it can be read the same way both from the left and the right hand side.
 // Input array: [2, 4, -2, 7, -2, 4, 2]
 // Output: The array is symmetric.
 // Input array: [3, 4, 12, 8]
 // Output: The array isn’t symmetric.
-var arrayF = [2, 4, -2, 7, -2, 4, 2];
-var arrayG = [];
+console.log("------****Dario****------");
+var arrayDario = [2, 4, -2, 7, -2, 4, 2];
+var answerArrayDario = "The array is symetric";
+
+for (var i = 0, j = arrayDario.length - 1; i <= j; i++, j--) {
+  if (arrayDario[i] !== arrayDario[j]) {
+    answerArrayDario = "The array isn't symetric";
+  }
+}
+console.log(answerArrayDario);
+console.log("------********------");
+
+var arrayG = [2, 4, -2, 7, -2, 4, 2];
+var answerArrayG = "";
+
+for (var i = 0; i < arrayG.length; i++) {
+  if (arrayG[i] === arrayG[(arrayG.length - 1) - i]) {
+    answerArrayG = "The array is symetric";
+  } else {
+    answerArrayG = "The array isn't symetric";
+  }
+}
+console.log(answerArrayG);
+
+console.log("------********------");
 
 // 7. Write a program that intertwines two arrays. You can assume the arrays are of the same length.
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
