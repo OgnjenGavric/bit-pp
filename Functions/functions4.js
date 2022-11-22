@@ -14,7 +14,7 @@ function isInArray(arr, e) {
   return "no";
 }
 
-console.log(isInArray([5, -4.2, 3, 7], 3));
+console.log(isInArray([5, -4.2, 3, 7], 4));
 
 /*2. Write a program that multiplies every positive element of a given array by 2.
 Input array: [-3, 11, 5, 3.4, -8]
@@ -40,8 +40,8 @@ Output: -1, 3
 */
 
 function findMin(arr) {
-  var min = 0,
-    index = 0;
+  var min = 0;
+  var index = 0;
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] < min) {
       min = arr[i];
@@ -58,15 +58,14 @@ Output: 2
 */
 
 function nextMin(arr) {
-  var min = 0,
-    min2 = 0;
+  var min = 0;
+  var min2 = 0;
   for (var i = 0; i < arr.length; i++) {
     if (i === 0) {
       min = arr[i];
     } else if (arr[i] < min) {
       min2 = min;
       min = arr[i];
-
     }
   }
   return min2;
@@ -116,7 +115,6 @@ Output array: [4, 3, 5, 8, 6, 11, 2, 9]
 function intertwine(arr1, arr2) {
   var newArr = [];
   for (var i = 0; i < arr1.length || i < arr2.length; i++) {
-
     newArr[newArr.length] = arr1[i];
     newArr[newArr.length] = arr2[i];
   }
