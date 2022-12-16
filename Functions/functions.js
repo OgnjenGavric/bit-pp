@@ -84,6 +84,11 @@ console.log(draw);
 ***
 *******
 */
+var values = [5, 3, 7];
+for (var i = 0; i < values.length; i++) {
+  console.log('*'.repeat(values[i]));
+}
+
 console.log("_____________");
 // 7. Write a program that calculates a number of digits of a given number.
 function digits_count(number) {
@@ -165,7 +170,7 @@ function repeatStringNumTimes(string, times) {
   }
   return repeatedString;
 }
-repeatStringNumTimes("abc", 3);
+console.log(repeatStringNumTimes("abc", 4))
 
 
 
