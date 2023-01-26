@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movie Festival</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Movie Festival</h1>
+    </div>
+    <div class="container">
+      <div class="sub-heading">
+        <p>Please fill out the form:</p>
+        <p>Movie</p>
+      </div>
+      <form>
+        <div class="sub-heading">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="sub-heading">
+          <label for="length">Length (minutes)</label>
+          <input type="text" id="length" />
+        </div>
+        <div class="sub-heading">
+          <select id="genre">
+            <option value="">-</option>
+            <option value="drama">Drama</option>
+            <option value="action">Action</option>
+            <option value="horror">Horror</option>
+            <option value="adventure">Adventure</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="thriller">Thriller</option>
+          </select>
+        </div>
+        <input
+          type="button"
+          value="Create movie"
+          class="button"
+          id="create-movie"
+        />
+        <div class="sub-heading">
+          <p id="movie-error"></p>
+          <ul id="movie-list"></ul>
+        </div>
+      </form>
+      <div class="sub-heading">
+        <p>Program</p>
+      </div>
+      <form>
+        <div class="sub-heading">
+          <label for="date">Date</label>
+          <input type="date" placeholder="mm/dd/yyyy" id="date" />
+        </div>
+        <input
+          type="button"
+          value="Create program"
+          class="button"
+          id="create-program"
+        />
+        <div class="sub-heading">
+          <p id="program-error"></p>
+          <ul id="program-list"></ul>
+        </div>
+        <hr />
+        <div class="sub-heading">
+          <label for="movie-select">Movie</label>
+          <select id="movie-select">
+            <option value="">-</option>
+          </select>
+        </div>
+        <div class="sub-heading">
+          <label for="program-select">Program</label>
+          <select id="program-select">
+            <option value="">-</option>
+          </select>
+        </div>
+        <input
+          type="button"
+          value="Add movie to program"
+          class="button"
+          id="add-movie"
+        />
+      </form>
+    </div>
+    <script src="./js/entities.js"></script>
+    <script src="./js/controler.js"></script>
+  </body>
+</html>
