@@ -19,12 +19,21 @@ function validateData(data) {
   return errors;
 }
 
-function updateList(exam) {
+/* function updateList(exam) {
   var list = document.getElementById("exam-list");
   var item = document.createElement("li");
   item.innerHTML = "<span>" + exam.getExamInfo() + "</span> - <span>" + (exam.hasPassed() ? "PASSED" : "FAILED") + "</span>";
   list.appendChild(item);
+} */
+
+function updateList(exam) {
+  var list = document.getElementById("exam-list");
+  var item = document.createElement("li");
+  item.innerHTML = exam.getExamInfo() + " - " + exam.getResult();
+  item.classList.add(exam.hasPassed() ? "passed" : "failed");
+  list.appendChild(item);
 }
+
 
 function updateStatistics(passed, failed) {
   var statistics = document.getElementById("statistics");

@@ -11,3 +11,7 @@ Exam.prototype.getExamInfo = function () {
 Exam.prototype.hasPassed = function () {
   return this.grade > 5;
 };
+
+Exam.prototype.getResult = function () {
+  return this.hasPassed() ? "PASSED" : "FAILED";
+};
