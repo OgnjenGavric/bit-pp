@@ -34,7 +34,6 @@ function updateList(exam) {
   list.appendChild(item);
 }
 
-
 function updateStatistics(passed, failed) {
   var statistics = document.getElementById("statistics");
 
